@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Kő-Papír-Olló</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Kő – Papír – Olló</h1>
+
+        <div class="score-board">
+            <div class="score-item">
+                <span class="label">Játékos</span>
+                <span id="player-score" class="score-val">0</span>
+            </div>
+            <div class="score-item">
+                <span class="label">Gép</span>
+                <span id="cpu-score" class="score-val">0</span>
+            </div>
+        </div>
+
+        <div id="display-area">
+            <div id="battle-emojis">
+                <span id="player-hand">❓</span>
+                <span class="vs">VS</span>
+                <span id="cpu-hand">❓</span>
+            </div>
+            <div id="battle-text">Válassz egyet!</div>
+        </div>
+
+        <div class="choices">
+            <button onclick="play('ko')" title="Kő">✊</button>
+            <button onclick="play('papir')" title="Papír">✋</button>
+            <button onclick="play('ollo')" title="Olló">✌️</button>
+        </div>
+
+        <div id="result-message">Készen állsz?</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
